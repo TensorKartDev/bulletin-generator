@@ -1,0 +1,7 @@
+__*
+.vscode
+topic_collections/
+*.jpg
+*.png
+*.ipynb
+.DS_Store

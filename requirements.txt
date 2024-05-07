@@ -1,0 +1,7 @@
+pdfplumber
+paddleocr
+PyQt6
+psycopg2
+transformers
+openai
+ipykernel
