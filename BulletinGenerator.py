@@ -1,4 +1,4 @@
-from PyQt6.QtWidgets import QWidget,QHBoxLayout,QSplitter,QApplication
+from PyQt6.QtWidgets import QWidget,QHBoxLayout,QSplitter,QApplication,QToolBar
 from PDFViewer import PDFViewer
 import sys
 from FileDirectoryExplorer import FileDirectoryExplorer
