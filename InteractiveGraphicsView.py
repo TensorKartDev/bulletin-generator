@@ -25,15 +25,25 @@ class InteractiveGraphicsView(QGraphicsView):
             self.rubberBand = QGraphicsRectItem()
             self.rubberBand.setPen(Qt.GlobalColor.blue)
             self.scene.addItem(self.rubberBand)
-        self.rubberBand.show()
-        self.rubberBand.setRect(self.origin.x(), self.origin.y(), 0, 0)
+            self.rubberBand.show()
+            self.rubberBand.setRect(self.origin.x(), self.origin.y(), 0, 0)
         super().mousePressEvent(event)
 
     def mouseMoveEvent(self, event):
         if self.rubberBand and self.origin:
             to = self.mapToScene(event.position().toPoint())
-            self.rubberBand.setRect(min(self.origin.x(), to.x()), min(self.origin.y(), to.y()),
+            try:
+
+                self.rubberBand.setRect(min(self.origin.x(), to.x()), min(self.origin.y(), to.y()),
                                     abs(self.origin.x() - to.x()), abs(self.origin.y() - to.y()))
+            except:
+                print("Error")
+                if not self.rubberBand:
+                    self.rubberBand = QGraphicsRectItem()
+                    self.rubberBand.setPen(Qt.GlobalColor.blue)
+                    self.scene.addItem(self.rubberBand)
+                    self.rubberBand.show()
+                    self.rubberBand.setRect(self.origin.x(), self.origin.y(), 0, 0)
         super().mouseMoveEvent(event)
 
     def mouseReleaseEvent(self, event):
