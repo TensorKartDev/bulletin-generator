@@ -6,6 +6,9 @@ from PyQt6.QtCore import QRect, QRectF, Qt,pyqtSignal
 # import event
 import os, os.path
 from InteractiveGraphicsView import InteractiveGraphicsView
+MOST_RECENT_FILE = None
+MOST_RECENT_TIME = 0
+
 class PDFViewer(QWidget):
     def __init__(self):
         super().__init__()
@@ -34,11 +37,11 @@ class PDFViewer(QWidget):
             self.prevPageAction.triggered.connect(self.prevPage)
             self.nextPageAction.triggered.connect(self.nextPage)
 
-            # Scroll area to hold the graphics view
-            self.scrollArea = QScrollArea(self)
-            self.scrollArea.setWidgetResizable(True)
-            self.scrollArea.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
-            self.scrollArea.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAsNeeded)
+            # # Scroll area to hold the graphics view
+            # self.scrollArea = QScrollArea(self)
+            # self.scrollArea.setWidgetResizable(True)
+            # self.scrollArea.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
+            # self.scrollArea.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAsNeeded)
 
         # Buttons for actions
         
@@ -57,9 +60,9 @@ class PDFViewer(QWidget):
         # self.graphicsView.mouseRelease
         
         #if self.selectedtopic is not None:
-        self.label = QLabel("", self)
-        self.label.setStyleSheet("font-size: 16px; color: blue;")
-        self.layout.addWidget(self.label)
+        # self.label = QLabel("", self)
+        # self.label.setStyleSheet("font-size: 16px; color: blue;")
+        # self.layout.addWidget(self.label)
         #layout.addWidget(self.btncreate_new_bulletin)
         # layout.addWidget(self.btnScreenshot)
         self.layout.addWidget(self.graphicsView)
@@ -73,12 +76,17 @@ class PDFViewer(QWidget):
         self.graphicsView.pixmapCropped.connect(self.handleCroppedPixmap)
         self.show()
 
+    
+    
     def handleCroppedPixmap(self, pixmap):
-        print("signal intrcepted")
-        files_count = len([name for name in os.listdir(self.selectedtopic) if os.path.isfile(name)])
-        # print(files_count)
-        path_to_save = f"{self.selectedtopic}/{self.selectedtopic.split("/")[-1]}_{files_count + 1}.png"
-        self.label.Text = self.selectedtopic.split("/")[-1]
+        topic = self.selectedtopic 
+        # print("Topic : ", self.selectedtopic)
+        recent_file = self.selectedtopic.most_recent_file
+        # print("most recent file ", recent_file)
+        # print("File number",str(self.selectedtopic.next_file_index))
+        path_to_save = f"{self.selectedtopic.path}/{str(self.selectedtopic.next_file_index)}.png"
+        print("PATH", path_to_save)
+        #self.label.Text = self.selectedtopic.split("/")[-1]
         success = pixmap.save(path_to_save, 'PNG', 100)
         print(success)
         if self.graphicsView.rubberBand :
