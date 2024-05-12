@@ -50,14 +50,17 @@ class FileDirectoryExplorer(QWidget):
                 
         return MOST_RECENT_FILE, MOST_RECENT_TIME
     def onTreeClicked(self, index):
-        file_path = self.model.filePath(index)
-        file_title = self.model.fileName(index)
-        MOST_RECENT_FILE, MOST_RECENT_TIME = self.most_recent(index)
+        try:
+            # print(index, type(index))
+            file_path = self.model.filePath(index)
+            file_title = self.model.fileName(index)
+            MOST_RECENT_FILE, MOST_RECENT_TIME = self.most_recent(index)
 
-        topic = Topic(title=file_title, path=file_path,most_recent_file=MOST_RECENT_FILE, most_recent_time=MOST_RECENT_TIME )
-        #print(file_path)
-        #path = self.model.filePath(file_path)
-        self.topicNodeClicked.emit(topic)
-        self.pdf_viewer.selectedtopic = topic
-        if file_path.endswith('.pdf'):
-            self.pdf_viewer.loadPDF(file_path)
+            topic = Topic(title=file_title, path=file_path,most_recent_file=MOST_RECENT_FILE, most_recent_time=MOST_RECENT_TIME )
+            #print(file_path)
+            #path = self.model.filePath(file_path)
+            self.topicNodeClicked.emit(topic)
+            self.pdf_viewer.selectedtopic = topic
+        except:
+            print("Not a directory")
+            return False
