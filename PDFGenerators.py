@@ -41,7 +41,7 @@ class ImageToPDF:
 
 # Example usage:
 # Create an instance of ImageToPDF with a default path (optional)
-converter = ImageToPDF()
+# converter = ImageToPDF()
 
-# Convert an image to PDF
-converter.image_to_pdf('path_to_your_image.jpg')
+# # Convert an image to PDF
+# converter.image_to_pdf('path_to_your_image.jpg')

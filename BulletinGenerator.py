@@ -25,8 +25,10 @@ class MainViewer(QWidget):
         self.setWindowTitle(os.environ["APP_TITLE"])
         self.setGeometry(100, 100, 1200, 600)
         self.file_explorer.topicNodeClicked.connect(self.handleTopicChanged)
+        
         self.show()
         # print()
+
     def handleTopicChanged(self, topic):
         print("From Bulletin generator", topic)
 
