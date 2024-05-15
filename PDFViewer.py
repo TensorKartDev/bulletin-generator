@@ -106,7 +106,7 @@ class PDFViewer(QWidget):
 
     def loadPDF(self, path):
         self.doc = fitz.open(path)
-        zoom = 2  # Adjust this factor to increase the rendering resolution
+        zoom = 1.5  # Adjust this factor to increase the rendering resolution
         new_size_matrix = fitz.Matrix(zoom, zoom)
         #load all pages at once
         self.deepload(new_size_matrix)
