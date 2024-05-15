@@ -106,8 +106,10 @@ class PDFViewer(QWidget):
 
     def loadPDF(self, path):
         self.doc = fitz.open(path)
+        zoom = 2  # Adjust this factor to increase the rendering resolution
+        new_size_matrix = fitz.Matrix(zoom, zoom)
         #load all pages at once
-        self.deepload()
+        self.deepload(new_size_matrix)
         pageno = 0
         self.currentPage = pageno
         self.showPage(self.currentPage)
@@ -125,12 +127,12 @@ class PDFViewer(QWidget):
         if self.doc:
             self.pageLabel.setText(f"Page: {self.currentPage + 1}/{self.doc.page_count}")
 
-    def deepload(self):
+    def deepload(self, size_matrix):
         if self.doc:
             for i in range(self.doc.page_count):
                 # if i > 0:
                     page = self.doc.load_page(i)
-                    pix = page.get_pixmap()
+                    pix = page.get_pixmap(matrix=size_matrix)
                     img = QImage(pix.samples, pix.width, pix.height, pix.stride, QImage.Format.Format_RGB888)
                     self.pages.append(img)
             #print(len(self.pages))
