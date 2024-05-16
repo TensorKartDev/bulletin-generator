@@ -23,7 +23,7 @@ class PDFViewer(QWidget):
         self.capturing = False
         self.selectedtopic = ""
         self.pages = []
-        self.ocr = PaddleOCR(use_angle_cls=True, lang='en')
+        # self.ocr = PaddleOCR(use_angle_cls=True, lang='en')
 
     def initUI(self):
         self.layout = QVBoxLayout(self)
