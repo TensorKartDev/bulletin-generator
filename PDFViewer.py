@@ -87,7 +87,7 @@ class PDFViewer(QWidget):
         # print("File number",str(self.selectedtopic.next_file_index))
 
         path_to_save = f"{self.selectedtopic.path}/{str(self.selectedtopic.next_file_index)}.png"
-        high_res_pixmap = pixmap.scaled(pixmap.width() * 2, pixmap.height() * 2, Qt.KeepAspectRatio, Qt.SmoothTransformation)
+        high_res_pixmap = pixmap.scaled(pixmap.width() * 2, pixmap.height() * 2, Qt.AspectRatioMode.KeepAspectRatio, Qt.TransformationMode.SmoothTransformation)
         #self.label.Text = self.selectedtopic.split("/")[-1]
         success = high_res_pixmap.save(path_to_save, 'PNG', 100)
         print(success)
