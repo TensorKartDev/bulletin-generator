@@ -3,7 +3,7 @@ __*
 topic_collections/
 *.jpg
 *.png
-*.ipynb
+
 .DS_Store
 topics.json
 .env
