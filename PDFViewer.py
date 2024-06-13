@@ -35,6 +35,14 @@ class PDFViewer(QWidget):
             # Add actions to the toolbar
             self.prevPageAction = QAction('Previous Page', self)
             self.nextPageAction = QAction('Next Page', self)
+            # Action for building topics 
+            self.getTopicsAction = QAction("Build Topics", self)
+            self.toolBar.addAction(self.getTopicsAction)
+
+            # Action for generating new bulletin from topics topics 
+            self.buildBulletinAction = QAction("Build New Bulletin", self)
+            self.toolBar.addAction(self.buildBulletinAction)
+
             self.pageLabel = QLabel("Page: 0/0")
             self.toolBar.addAction(self.prevPageAction)
             self.toolBar.addAction(self.nextPageAction)
@@ -42,6 +50,8 @@ class PDFViewer(QWidget):
 
             self.prevPageAction.triggered.connect(self.prevPage)
             self.nextPageAction.triggered.connect(self.nextPage)
+            self.getTopicsAction.triggered.connect(self.getTopics)
+            self.buildBulletinAction.triggered.connect(self.buildBulletin)
             self.statusBar = QStatusBar()
             # self.setStatusBar(self.statusBar)
 
@@ -98,10 +108,17 @@ class PDFViewer(QWidget):
         build_left_panel = True
         print("New bulletin clicked open left panel")
         return
+    
+    def getTopics(self):
+        a = 4
+        print("Getting topics from pdf file")
+
+    def buildBulletin(self):
+        print("Starting to build bulletin from given json file")
     def openFile(self):
         path, _ = QFileDialog.getOpenFileName(self, "Open file", "", "PDF files (*.pdf);;")
         if path:
-            
+
             self.loadPDF(path)
 
     def loadPDF(self, path):
