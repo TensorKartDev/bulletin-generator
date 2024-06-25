@@ -6,4 +6,5 @@ psycopg2
 transformers
 openai
 fpdf
+sentence_transformers
 python-dotenv

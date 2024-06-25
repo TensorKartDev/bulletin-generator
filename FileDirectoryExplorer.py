@@ -4,6 +4,7 @@ from PyQt6.QtGui import QFileSystemModel
 from dotenv import load_dotenv
 from Topic import Topic
 import os
+from pathlib import Path
 load_dotenv()
 # root_path = os.environ["DEFAULT_LOCATION_FOR_TOPIC_COLLECTION"]
 default_root_path = os.getenv('DEFAULT_LOCATION_FOR_TOPIC_COLLECTION', QDir.rootPath())
@@ -47,6 +48,7 @@ class FileDirectoryExplorer(QWidget):
                     # update the most recent file and its modification time
                         MOST_RECENT_FILE = entry.name
                         MOST_RECENT_TIME = mod_time
+        print("From most_recent : ",MOST_RECENT_FILE)
                 
         return MOST_RECENT_FILE, MOST_RECENT_TIME
     def onTreeClicked(self, index):
@@ -54,6 +56,13 @@ class FileDirectoryExplorer(QWidget):
             # print(index, type(index))
             file_path = self.model.filePath(index)
             file_title = self.model.fileName(index)
+            dir_path = Path(file_path)
+            # if dir_path.is_dir():
+            #     print(f"{dir_path} is a Directory.")
+            # else:
+            #     print(f"{dir_path} is not a Directory.")
+            # if os.isdir(file_path):
+            #     print("Is a directory!")
             MOST_RECENT_FILE, MOST_RECENT_TIME = self.most_recent(index)
 
             topic = Topic(title=file_title, path=file_path,most_recent_file=MOST_RECENT_FILE, most_recent_time=MOST_RECENT_TIME )
@@ -61,6 +70,6 @@ class FileDirectoryExplorer(QWidget):
             #path = self.model.filePath(file_path)
             self.topicNodeClicked.emit(topic)
             self.pdf_viewer.selectedtopic = topic
-        except:
-            print("Not a directory")
+        except Exception as e:
+            print("Not a directory ", e)
             return False

@@ -7,4 +7,5 @@ topic_collections/
 .DS_Store
 topics.json
 .env
-
+chroma_data/*
+topics_*
