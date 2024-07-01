@@ -85,25 +85,29 @@ class PDFViewer(QWidget):
         # self.graphicsView.pixmapCropped.connect(self.handleCroppedPixmap)  # Connect the signal to the slot
 
         self.graphicsView.pixmapCropped.connect(self.handleCroppedPixmap)
+        
         self.show()
 
     
     
     def handleCroppedPixmap(self, pixmap):
         topic = self.selectedtopic 
-        # print("Topic : ", self.selectedtopic)
-        recent_file = self.selectedtopic.most_recent_file
-        # print("most recent file ", recent_file)
-        # print("File number",str(self.selectedtopic.next_file_index))
+        try:
 
-        path_to_save = f"{self.selectedtopic.path}/{str(self.selectedtopic.next_file_index)}.png"
-        high_res_pixmap = pixmap.scaled(pixmap.width() * 2, pixmap.height() * 2, Qt.AspectRatioMode.KeepAspectRatio, Qt.TransformationMode.SmoothTransformation)
-        #self.label.Text = self.selectedtopic.split("/")[-1]
-        success = high_res_pixmap.save(path_to_save, 'PNG', 100)
-        print(success)
-        if self.graphicsView.rubberBand :
-            print('From Viewer Crop area defined:', self.graphicsView.rubberBand.rect())
+            # print("Topic : ", self.selectedtopic)
+            recent_file = self.selectedtopic.most_recent_file
+            # print("most recent file ", recent_file)
+            # print("File number",str(self.selectedtopic.next_file_index))
 
+            path_to_save = f"{self.selectedtopic.path}/{str(self.selectedtopic.next_file_index)}.png"
+            high_res_pixmap = pixmap.scaled(pixmap.width() * 2, pixmap.height() * 2, Qt.AspectRatioMode.KeepAspectRatio, Qt.TransformationMode.SmoothTransformation)
+            #self.label.Text = self.selectedtopic.split("/")[-1]
+            success = high_res_pixmap.save(path_to_save, 'PNG', 100)
+            print(success)
+            if self.graphicsView.rubberBand :
+                print('From Viewer Crop area defined:', self.graphicsView.rubberBand.rect())
+        except Exception as e:
+            print(e)
     def new_bulletin(self):
         build_left_panel = True
         print("New bulletin clicked open left panel")

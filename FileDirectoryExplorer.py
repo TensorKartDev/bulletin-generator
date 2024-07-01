@@ -5,13 +5,16 @@ from dotenv import load_dotenv
 from Topic import Topic
 import os
 from pathlib import Path
+from DescriptionDialog import DescriptionDialog
 load_dotenv()
 # root_path = os.environ["DEFAULT_LOCATION_FOR_TOPIC_COLLECTION"]
 default_root_path = os.getenv('DEFAULT_LOCATION_FOR_TOPIC_COLLECTION', QDir.rootPath())
 class FileDirectoryExplorer(QWidget):
     topicNodeClicked = pyqtSignal(Topic)
+    pdfSelected = pyqtSignal(str)
     MOST_RECENT_TIME = 0
     MOST_RECENT_FILE = None
+    
     def __init__(self, pdf_viewer):
         super().__init__()
 
@@ -51,10 +54,30 @@ class FileDirectoryExplorer(QWidget):
         print("From most_recent : ",MOST_RECENT_FILE)
                 
         return MOST_RECENT_FILE, MOST_RECENT_TIME
+    def show_pdf(self, file_path):
+        # Implement your PDF viewing logic here
+        if self.pdf_viewer:
+            self.pdf_viewer.(file_path)
+
     def onTreeClicked(self, index):
         try:
             # print(index, type(index))
             file_path = self.model.filePath(index)
+            file_path = self.model.filePath(index)
+            file_extension = file_path.split("/")[-1].split(".")[-1].lower()
+            
+            if file_extension in ["png", "jpg", "jpeg"]:
+                print("Image file found")
+                dialog = DescriptionDialog(file_path, self)
+                dialog.exec()
+
+            elif file_extension == "pdf":
+                print("PDF file found")
+                self.pdfSelected.emit(file_path)
+                a = "aa"
+                # self.show_pdf(file_path)
+                # return
+
             file_title = self.model.fileName(index)
             dir_path = Path(file_path)
             # if dir_path.is_dir():
@@ -69,6 +92,7 @@ class FileDirectoryExplorer(QWidget):
             #print(file_path)
             #path = self.model.filePath(file_path)
             self.topicNodeClicked.emit(topic)
+            
             self.pdf_viewer.selectedtopic = topic
         except Exception as e:
             print("Not a directory ", e)
