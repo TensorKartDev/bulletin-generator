@@ -1,0 +1,71 @@
+{
+    "page": 434,
+    "table_number": 1,
+    "data": [
+        [
+            "Trim",
+            "Valve Body Pressure\nRating",
+            "Valve Body\nDesign"
+        ],
+        [
+            "Cavitrol III\nOne‐Stage",
+            "CL125 to CL600",
+            "ET"
+        ],
+        [
+            null,
+            "CL150 to CL900",
+            "EWT\nELT"
+        ],
+        [
+            null,
+            "CL900 through CL2500",
+            "DBAQ"
+        ],
+        [
+            null,
+            "Note 1",
+            "CC"
+        ],
+        [
+            "Cavitrol III\nTwo‐Stage",
+            "CL600",
+            "ET\nEWT"
+        ],
+        [
+            null,
+            "CL900",
+            "EWT\n(NPS 8 x 6 & 12 x 8)\nELT\nDBAQ\nEHT"
+        ],
+        [
+            null,
+            "CL1500",
+            "DBAQ\nEHT"
+        ],
+        [
+            null,
+            "CL2500",
+            "DBAQ\nEHT"
+        ],
+        [
+            "Cavitrol III\nThree‐Stage",
+            "CL900 through CL2500",
+            "DBAQ\nEHT"
+        ],
+        [
+            "Cavitrol IV",
+            "CL2500",
+            "CAV 4"
+        ],
+        [
+            "Cavitrol V",
+            "CL150 and CL300\nCL150 through CL600",
+            "U\nV100"
+        ],
+        [
+            "Note 1: 10,000 psig API (American Petroleum Institute).",
+            null,
+            null
+        ]
+    ]
+}

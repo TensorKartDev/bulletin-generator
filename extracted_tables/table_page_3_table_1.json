@@ -1,0 +1,146 @@
+{
+    "page": 3,
+    "table_number": 1,
+    "data": [
+        [
+            "VALVE\nTYPE",
+            "FLOW\nDIRECTION",
+            "RELATIVE FLOW COEFFICIENT (cid:2)",
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            "0.10",
+            "0.20",
+            "0.40",
+            "0.60",
+            "0.80",
+            "1.00"
+        ],
+        [
+            "Globe, parabolic plug",
+            "To open\nTo close",
+            "0.10\n0.20",
+            "0.15\n0.30",
+            "0.25\n0.50",
+            "0.31\n0.60",
+            "0.39\n0.80",
+            "0.46\n1.00"
+        ],
+        [
+            "Globe, 3 V‐port plug",
+            "Either(1)",
+            "0.29",
+            "0.40",
+            "0.42",
+            "0.43",
+            "0.45",
+            "0.48"
+        ],
+        [
+            "Globe, 4 V‐port plug",
+            "Either(1)",
+            "0.25",
+            "0.35",
+            "0.36",
+            "0.37",
+            "0.39",
+            "0.41"
+        ],
+        [
+            "Globe, 6 V‐port plug",
+            "Either(1)",
+            "0.17",
+            "0.23",
+            "0.24",
+            "0.26",
+            "0.28",
+            "0.30"
+        ],
+        [
+            "Globe, 60 equal diameter hole\ndrilled cage",
+            "Either(1)",
+            "0.40",
+            "0.29",
+            "0.20",
+            "0.17",
+            "0.14",
+            "0.13"
+        ],
+        [
+            "Globe, 120 equal diameter hole\ndrilled cage",
+            "Either(1)",
+            "0.29",
+            "0.20",
+            "0.14",
+            "0.12",
+            "0.10",
+            "0.09"
+        ],
+        [
+            "Butterfly, swing‐through\n(centered shaft), to 70(cid:2)",
+            "Either",
+            "0.26",
+            "0.34",
+            "0.42",
+            "0.50",
+            "0.53",
+            "0.57"
+        ],
+        [
+            "Butterfly, fluted vane, to 70(cid:2)",
+            "Either",
+            "0.08",
+            "0.10",
+            "0.15",
+            "0.20",
+            "0.24",
+            "0.30"
+        ],
+        [
+            "60(cid:2) flat disk",
+            "Either",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "0.50"
+        ],
+        [
+            "Eccentric rotary plug",
+            "Either",
+            "0.12",
+            "0.18",
+            "0.22",
+            "0.30",
+            "0.36",
+            "0.42"
+        ],
+        [
+            "Segmented ball",
+            "Either",
+            "0.60",
+            "0.65",
+            "0.70",
+            "0.75",
+            "0.78",
+            "0.80"
+        ],
+        [
+            "Note: These values are typical only; actual values shall be stated by manufacturer.\n1. Limited P1 - P2 in flow to close direction.",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ]
+    ]
+}

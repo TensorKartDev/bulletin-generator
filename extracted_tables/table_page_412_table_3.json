@@ -1,0 +1,26 @@
+{
+    "page": 412,
+    "table_number": 3,
+    "data": [
+        [
+            "To\nObtain\nby\nMultiply\nNumber of",
+            "cubic meter\nm3",
+            "cubic\ncentimeter\ncm3",
+            "liter\nl",
+            "cubic inch\nin3",
+            "cubic foot\nft3",
+            "Imperial\ngallon\nImp gal",
+            "U.S. gallon\nU.S. gal"
+        ],
+        [
+            "m3\ncm3\nliter\nin3\nft3\nImp gal\nU.S. gal",
+            "1\n0.000001000\n0.001000\n0.00001639\n0.02832\n0.004546\n0.003785",
+            "1,000,000\n1\n1000\n16.39\n28,320\n4546\n3785",
+            "1000\n0.001000\n1\n0.01639\n28.32\n4.546\n3.785",
+            "61,020\n0.06102\n61.02\n1\n1728\n277.4\n231.0",
+            "35.31\n0.00003531\n0.03531\n0.0005787\n1\n0.1605\n0.1337",
+            "220.0\n0.0002200\n0.2200\n0.003605\n6.229\n1\n0.8327",
+            "264.2\n0.0002642\n0.2642\n0.004329\n7.480\n1.201\n1"
+        ]
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "page": 427,
+    "table_number": 1,
+    "data": [
+        [
+            "VALVE SIZE, NPS",
+            "PRESSURE RATINGS",
+            null,
+            null
+        ],
+        [
+            null,
+            "CL2500",
+            null,
+            null
+        ],
+        [
+            null,
+            "Flow Area, Inch2",
+            "Valve Diameter (dv)",
+            null
+        ],
+        [
+            null,
+            null,
+            "mm",
+            "Inch"
+        ],
+        [
+            "8",
+            "26",
+            "144",
+            "5.75"
+        ]
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "page": 413,
+    "table_number": 5,
+    "data": [
+        [
+            "To\nObtain\nby\nMultiply\nNumber of",
+            "kilonewton\nKN",
+            "kilogram force\nkgf",
+            "pound force\nlbf",
+            "poundal\npdl"
+        ],
+        [
+            "kilonewtons\nkilogram force\npound force\npoundal",
+            "1\n0.009807\n0.004448\n0.0001383",
+            "102.0\n1\n0.4536\n0.01410",
+            "224.8\n2.205\n1\n0.03108",
+            "7233\n70.93\n32.17\n1"
+        ]
+    ]
+}

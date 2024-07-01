@@ -54,10 +54,10 @@ class FileDirectoryExplorer(QWidget):
         print("From most_recent : ",MOST_RECENT_FILE)
                 
         return MOST_RECENT_FILE, MOST_RECENT_TIME
-    def show_pdf(self, file_path):
-        # Implement your PDF viewing logic here
-        if self.pdf_viewer:
-            self.pdf_viewer.(file_path)
+    # def show_pdf(self, file_path):
+    #     # Implement your PDF viewing logic here
+    #     # if self.pdf_viewer:
+    #     #     self.pdf_viewer.(file_path)
 
     def onTreeClicked(self, index):
         try:

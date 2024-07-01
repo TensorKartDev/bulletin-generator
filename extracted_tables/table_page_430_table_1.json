@@ -1,0 +1,26 @@
+{
+    "page": 430,
+    "table_number": 1,
+    "data": [
+        [
+            "",
+            "a",
+            "b"
+        ],
+        [
+            "Standard Valves",
+            "14.4",
+            "18.8"
+        ],
+        [
+            "Cavitrol III - 1 stage",
+            "9.4",
+            "18.8"
+        ],
+        [
+            "Rotary Attenuator",
+            "9.4",
+            "22.6"
+        ]
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "page": 425,
+    "table_number": 3,
+    "data": [
+        [
+            "VALVE SIZE, NPS",
+            "PRESSURE RATING",
+            null,
+            null
+        ],
+        [
+            null,
+            "CL300",
+            null,
+            null
+        ],
+        [
+            null,
+            "Flow Area, Inch2",
+            "Valve Diameter (dv)",
+            null
+        ],
+        [
+            null,
+            null,
+            "mm",
+            "Inch"
+        ],
+        [
+            "10",
+            "79",
+            "254",
+            "10.00"
+        ],
+        [
+            "12",
+            "113",
+            "305",
+            "12.00"
+        ],
+        [
+            "16",
+            "183",
+            "387",
+            "15.25"
+        ]
+    ]
+}

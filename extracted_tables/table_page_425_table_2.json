@@ -1,0 +1,114 @@
+{
+    "page": 425,
+    "table_number": 2,
+    "data": [
+        [
+            "VALVE SIZE,\nNPS",
+            "PRESSURE RATING",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            "CL150 and 300",
+            null,
+            null,
+            "CL600",
+            null,
+            null,
+            "CL900(2)",
+            null,
+            null
+        ],
+        [
+            null,
+            "Flow Area,\nInch2",
+            "Valve Diameter (dv)",
+            null,
+            "Flow Area,\nInch2",
+            "Valve Diameter (dv)",
+            null,
+            "Flow Area,\nInch2",
+            "Valve Diameter (dv)",
+            null
+        ],
+        [
+            null,
+            null,
+            "mm",
+            "Inch",
+            null,
+            "mm",
+            "Inch",
+            null,
+            "mm",
+            "Inch"
+        ],
+        [
+            "1\n1‐1/2\n2",
+            "0.79\n1.8\n3.1",
+            "25.4\n38.1\n50.8",
+            "1.00\n1.50\n2.00",
+            "0.79\n1.8\n3.1",
+            "25.4\n38.1\n50.8",
+            "1.00\n1.50\n2.00",
+            "‐ ‐ ‐\n‐ ‐ ‐\n‐ ‐ ‐",
+            "‐ ‐ ‐\n‐ ‐ ‐\n‐ ‐ ‐",
+            "‐ ‐ ‐\n‐ ‐ ‐\n‐ ‐ ‐"
+        ],
+        [
+            "2‐1/2\n3\n4\n6\n8",
+            "4.9\n7.1\n13\n28\n50",
+            "63.5\n76.2\n102\n152\n203",
+            "2.50\n3.00\n4.00\n6.00\n8.00",
+            "4.9\n7.1\n13\n28\n50",
+            "63.5\n76.2\n102\n152\n200",
+            "2.50\n3.00\n4.00\n6.00\n7.87",
+            "‐ ‐ ‐\n‐ ‐ ‐\n‐ ‐ ‐\n‐ ‐ ‐\n44",
+            "‐ ‐ ‐\n‐ ‐ ‐\n‐ ‐ ‐\n‐ ‐ ‐\n190",
+            "‐ ‐ ‐\n‐ ‐ ‐\n‐ ‐ ‐\n‐ ‐ ‐\n7.50"
+        ],
+        [
+            "10\n12\n14\n16\n18\n20\n24",
+            "79\n113\n138\n171\n227\n284\n415",
+            "254\n305\n337\n375\n432\n483\n584",
+            "10.00\n12.00\n13.25\n14.75\n17.00\n19.00\n23.00",
+            "75\n108\n130\n171\n214\n262\n380",
+            "248\n298\n327\n375\n419\n464\n559",
+            "9.75\n11.75\n12.87\n14.75\n16.50\n18.25\n22.00",
+            "‐ ‐ ‐\n97\n‐ ‐ ‐\n154\n‐ ‐ ‐\n‐ ‐ ‐\n‐ ‐ ‐",
+            "‐ ‐ ‐\n283\n‐ ‐ ‐\n356\n‐ ‐ ‐\n‐ ‐ ‐\n‐ ‐ ‐",
+            "‐ ‐ ‐\n11.12\n‐ ‐ ‐\n14.00\n‐ ‐ ‐\n‐ ‐ ‐\n‐ ‐ ‐"
+        ],
+        [
+            "30\n36",
+            "660\n962",
+            "737\n889",
+            "29.00\n35.00",
+            "660\n962",
+            "737\n889",
+            "29.00\n35.00",
+            "‐ ‐ ‐\n‐ ‐ ‐",
+            "‐ ‐ ‐\n‐ ‐ ‐",
+            "‐ ‐ ‐\n‐ ‐ ‐"
+        ],
+        [
+            "1. Use class rating of valve body shell. For example, an easy-e NPS 6, butt weld valve schedule 80 is available in CL600, 1500 and 2500 shells. Likewise, a Fisher easy-e NPS 8 x 6 butt weld valve\nbody, schedule 80, is available in either shell CL600 or 900.\n2. easy-e CL900, NPS 3 through 6 flanged valve body uses a CL1500 shell.",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ]
+    ]
+}

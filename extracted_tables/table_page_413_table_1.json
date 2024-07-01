@@ -1,0 +1,24 @@
+{
+    "page": 413,
+    "table_number": 1,
+    "data": [
+        [
+            "To\nObtain\nby\nMultiply\nNumber of",
+            "Ounce\noz",
+            "Pound\nlb",
+            "Short ton\nsh ton",
+            "Long ton\nL ton",
+            "Kilogram\nKg",
+            "Metric ton\ntonne"
+        ],
+        [
+            "Ounces\nPounds\nShort tons\nLong tons\nKilograms\nMetric tons",
+            "1\n16.00\n32,000\n35,840\n35.27\n35,270",
+            "0.06250\n1\n2000\n2240\n2.205\n2205",
+            "0.00003125\n0.0005000\n1\n1.120\n0.001102\n1.102",
+            "0.00002790\n0.0004464\n0.8929\n1\n0.0009842\n0.9842",
+            "0.02835\n0.4536\n907.2\n1016\n1\n1000",
+            "0.00002835\n0.0004536\n0.9072\n1.016\n0.001000\n1"
+        ]
+    ]
+}

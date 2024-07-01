@@ -1,0 +1,30 @@
+{
+    "page": 425,
+    "table_number": 1,
+    "data": [
+        [
+            "Gas",
+            "Specific Heat Ratio\n(k)"
+        ],
+        [
+            "Acetylene\nAir\nArgon\nButane\nCarbon Monoxide",
+            "1.38\n1.40\n1.67\n1.17\n1.40"
+        ],
+        [
+            "Carbon Dioxide\nEthane\nHelium\nHydrogen\nMethane",
+            "1.29\n1.25\n1.66\n1.40\n1.26"
+        ],
+        [
+            "0.6 Natural Gas\nNitrogen\nOxygen\nPropane\nPropylene",
+            "1.32\n1.40\n1.40\n1.21\n1.15"
+        ],
+        [
+            "Steam(1)",
+            "1.33"
+        ],
+        [
+            "1. Use property tables if available for greater accuracy.",
+            null
+        ]
+    ]
+}

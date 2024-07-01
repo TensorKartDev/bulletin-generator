@@ -100,7 +100,7 @@ class PDFViewer(QWidget):
             # print("File number",str(self.selectedtopic.next_file_index))
 
             path_to_save = f"{self.selectedtopic.path}/{str(self.selectedtopic.next_file_index)}.png"
-            high_res_pixmap = pixmap.scaled(pixmap.width() * 2, pixmap.height() * 2, Qt.AspectRatioMode.KeepAspectRatio, Qt.TransformationMode.SmoothTransformation)
+            high_res_pixmap = pixmap.scaled(pixmap.width() * 1, pixmap.height() * 1, Qt.AspectRatioMode.KeepAspectRatio, Qt.TransformationMode.SmoothTransformation)
             #self.label.Text = self.selectedtopic.split("/")[-1]
             success = high_res_pixmap.save(path_to_save, 'PNG', 100)
             print(success)
@@ -127,7 +127,7 @@ class PDFViewer(QWidget):
 
     def loadPDF(self, path):
         self.doc = fitz.open(path)
-        zoom = 1.5  # Adjust this factor to increase the rendering resolution
+        zoom = 1.0  # Adjust this factor to increase the rendering resolution
         new_size_matrix = fitz.Matrix(zoom, zoom)
         #load all pages at once
         self.deepload(new_size_matrix)

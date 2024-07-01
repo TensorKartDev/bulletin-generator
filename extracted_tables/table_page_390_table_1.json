@@ -1,0 +1,132 @@
+{
+    "page": 390,
+    "table_number": 1,
+    "data": [
+        [
+            "Symbol",
+            "Definition",
+            "Symbol",
+            "Definition"
+        ],
+        [
+            "Cv",
+            "Valve sizing coefficient",
+            "P2",
+            "Downstream absolute static pressure"
+        ],
+        [
+            "Cvnet",
+            "Valve flow coefficient calculated from the net pressure\nloss through the valve only",
+            "PC",
+            "Absolute thermodynamic critical pressure"
+        ],
+        [
+            "d",
+            "Nominal valve size",
+            "PV",
+            "Vapor pressure absolute of liquid at inlet temperature"
+        ],
+        [
+            "D",
+            "Internal diameter of the piping",
+            "ΔP",
+            "Pressure drop (P1‐P2) across the valve"
+        ],
+        [
+            "Fd",
+            "Valve style modifier, dimensionless",
+            "ΔPmax(L)",
+            "Maximum allowable liquid sizing pressure drop"
+        ],
+        [
+            "FF",
+            "Liquid critical pressure ratio factor, dimensionless",
+            "ΔPmax(LP)",
+            "Maximum allowable sizing pressure drop with attached\nfittings"
+        ],
+        [
+            "FK",
+            "Ratio of specific heats factor, dimensionless",
+            "q",
+            "Volume rate of flow"
+        ],
+        [
+            "FL",
+            "Rated liquid pressure recovery factor, dimensionless",
+            "qmax",
+            "Maximum flow rate (choked flow conditions) at given\nupstream conditions"
+        ],
+        [
+            "FLnet",
+            "Pressure recovery factor calculated from the net\npressure loss through the valve only",
+            "ReV",
+            "Valve Reynolds number, dimensionless"
+        ],
+        [
+            "FLP",
+            "Combined liquid pressure recovery factor and piping\ngeometry factor of valve with attached fittings (when\nthere are no attached fittings, FLP equals FL),\ndimensionless",
+            "T1",
+            "Absolute upstream temperature (degrees K or degree\nR)"
+        ],
+        [
+            "FP",
+            "Piping geometry factor, dimensionless",
+            "w",
+            "Mass rate of flow"
+        ],
+        [
+            "FR",
+            "Reynolds number factor, dimensionless",
+            "x",
+            "Ratio of pressure drop to upstream absolute static\npressure (ΔP/P1), dimensionless"
+        ],
+        [
+            "GF",
+            "Liquid specific gravity (ratio of density of liquid at\nflowing temperature to density of water at 60(cid:3)F),\ndimensionless",
+            "xT",
+            "Rated pressure drop ratio factor, dimensionless"
+        ],
+        [
+            "GG",
+            "Gas specific gravity (ratio of density of flowing gas to\ndensity of air with both at standard conditions(1), i.e.,\nratio of molecular weight of gas to molecular weight of\nair), dimensionless",
+            "xTnet",
+            "Pressure differential ratio factor calculate from the net\npressure loss through the valve only"
+        ],
+        [
+            "k",
+            "Ratio of specific heats, dimensionless",
+            "Y",
+            "Expansion factor (ratio of flow coefficient for a gas to\nthat for a liquid at the same Reynolds number),\ndimensionless"
+        ],
+        [
+            "K",
+            "Head loss coefficient of a device, dimensionless",
+            "Z",
+            "Compressibility factor, dimensionless"
+        ],
+        [
+            "M",
+            "Molecular weight, dimensionless",
+            "γ1",
+            "Specific weight at inlet conditions"
+        ],
+        [
+            "N",
+            "Numerical constant",
+            "ν",
+            "Kinematic viscosity, centistokes"
+        ],
+        [
+            "P1",
+            "Upstream absolute static pressure",
+            "",
+            ""
+        ],
+        [
+            "1. Standard conditions are defined as 60(cid:3)F (15.5(cid:3)C) and 14.7 psia (101.3kPa).",
+            null,
+            null,
+            null
+        ]
+    ]
+}

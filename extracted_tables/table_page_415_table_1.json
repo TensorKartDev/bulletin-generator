@@ -1,0 +1,24 @@
+{
+    "page": 415,
+    "table_number": 1,
+    "data": [
+        [
+            "degrees\nCelsius(1) (cid:3)C",
+            "Kelvin\nK",
+            "degrees\nFahrenheit (cid:3)F",
+            "degrees\nRankine (cid:3)R"
+        ],
+        [
+            "(cid:3)C\n(cid:3)C + 273.15\n9/5(cid:3)C + 32\n9/5(cid:3)C + 491.67",
+            "K‐273.15\nK\n9/5K‐459.67\n9/5K",
+            "5/9((cid:3)F‐32)\n5/9((cid:3)F + 459.67)\n(cid:3)F\n(cid:3)F + 459.67",
+            "5/9((cid:3)R‐491.67)\n5/9(cid:3)R\n(cid:3)R‐459.67\n(cid:3)R"
+        ],
+        [
+            "1. Formerly called Centigrade.",
+            null,
+            null,
+            null
+        ]
+    ]
+}

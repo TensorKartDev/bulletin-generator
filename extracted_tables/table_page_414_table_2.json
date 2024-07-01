@@ -1,0 +1,20 @@
+{
+    "page": 414,
+    "table_number": 2,
+    "data": [
+        [
+            "To\nObtain\nby\nMultiply\nNumber of",
+            "Newton Meter\nNm",
+            "kilogram force\nmeter\nkgf m",
+            "foot pound\nft lb",
+            "inch pound\nin lb"
+        ],
+        [
+            "Nm\nkgf m\nft lb\nin lb",
+            "1\n9.807\n1.356\n0.1130",
+            "0.1020\n1\n0.1383\n0.01152",
+            "0.7376\n7.233\n1\n0.08333",
+            "8.851\n86.80\n12.00\n1"
+        ]
+    ]
+}

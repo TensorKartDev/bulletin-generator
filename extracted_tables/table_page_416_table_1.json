@@ -1,0 +1,87 @@
+{
+    "page": 416,
+    "table_number": 1,
+    "data": [
+        [
+            "ANSI/FCI 70‐2",
+            "Maximum Leakage(1)",
+            null,
+            null,
+            null,
+            "Test Medium",
+            "Pressure and Temperature"
+        ],
+        [
+            "Class II",
+            "0.5% valve capacity at full travel",
+            null,
+            null,
+            null,
+            "Air",
+            "Service (cid:2)P or 50 psid (3.4 bar differential),\nwhichever is lower, at 50 to 125(cid:3)F (10 to 52(cid:3)C)"
+        ],
+        [
+            "Class III",
+            "0.1% valve capacity at full travel",
+            null,
+            null,
+            null,
+            "Air",
+            "Service (cid:2)P or 50 psid (3.4 bar differential),\nwhichever is lower, at 50 to 125(cid:3)F (10 to 52(cid:3)C)"
+        ],
+        [
+            "Class IV",
+            "0.01% valve capacity at full travel",
+            null,
+            null,
+            null,
+            "Air",
+            "Service (cid:2)P or 50 psid (3.4 bar differential),\nwhichever is lower, at 50 to 125(cid:3)F (10 to 52(cid:3)C)"
+        ],
+        [
+            "Class V",
+            "5 x 10-4 mL/min/psid/in. port dia.\n(5 x 10-12 m3/sec/bar differential/mm port dia)",
+            null,
+            null,
+            null,
+            "Water",
+            "Service (cid:2)P at 50 to 125(cid:3)F (10 to 52(cid:3)C)"
+        ],
+        [
+            "Class VI",
+            "Nominal Port\nDiameter",
+            null,
+            "Bubbles per\nMinute",
+            "mL per\nMinute",
+            "Air",
+            "Service (cid:2)P or 50 psid (3.4 bar differential),\nwhichever is lower, at 50 to 125(cid:3)F (10 to 52(cid:3)C)"
+        ],
+        [
+            null,
+            "Inch",
+            "mm",
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            "1\n1‐1/2\n2\n2‐1/2\n3",
+            "25\n38\n51\n64\n76",
+            "1\n2\n3\n4\n6",
+            "0.15\n0.30\n0.45\n0.60\n0.90",
+            null,
+            null
+        ],
+        [
+            null,
+            "4\n6\n8",
+            "102\n152\n203",
+            "11\n27\n45",
+            "1.70\n4.00\n6.75",
+            null,
+            null
+        ]
+    ]
+}
