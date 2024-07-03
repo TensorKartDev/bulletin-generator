@@ -73,27 +73,27 @@ class FileDirectoryExplorer(QWidget):
 
             elif file_extension == "pdf":
                 print("PDF file found")
-                self.pdfSelected.emit(file_path)
+                self.pdf_viewer.loadPDF(file_path)
                 a = "aa"
                 # self.show_pdf(file_path)
                 # return
+            else:
+                file_title = self.model.fileName(index)
+                dir_path = Path(file_path)
+                # if dir_path.is_dir():
+                #     print(f"{dir_path} is a Directory.")
+                # else:
+                #     print(f"{dir_path} is not a Directory.")
+                # if os.isdir(file_path):
+                #     print("Is a directory!")
+                MOST_RECENT_FILE, MOST_RECENT_TIME = self.most_recent(index)
 
-            file_title = self.model.fileName(index)
-            dir_path = Path(file_path)
-            # if dir_path.is_dir():
-            #     print(f"{dir_path} is a Directory.")
-            # else:
-            #     print(f"{dir_path} is not a Directory.")
-            # if os.isdir(file_path):
-            #     print("Is a directory!")
-            MOST_RECENT_FILE, MOST_RECENT_TIME = self.most_recent(index)
-
-            topic = Topic(title=file_title, path=file_path,most_recent_file=MOST_RECENT_FILE, most_recent_time=MOST_RECENT_TIME )
-            #print(file_path)
-            #path = self.model.filePath(file_path)
-            self.topicNodeClicked.emit(topic)
-            
-            self.pdf_viewer.selectedtopic = topic
+                topic = Topic(title=file_title, path=file_path,most_recent_file=MOST_RECENT_FILE, most_recent_time=MOST_RECENT_TIME )
+                #print(file_path)
+                #path = self.model.filePath(file_path)
+                self.topicNodeClicked.emit(topic)
+                
+                self.pdf_viewer.selectedtopic = topic
         except Exception as e:
             print("Not a directory ", e)
             return False

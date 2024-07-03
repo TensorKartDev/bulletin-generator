@@ -10,6 +10,7 @@ from PyQt6.QtGui import *
 from paddleocr import PaddleOCR,draw_ocr
 # import event
 import os, os.path
+from InputDocument import InputDocument
 from InteractiveGraphicsView import InteractiveGraphicsView
 MOST_RECENT_FILE = None
 MOST_RECENT_TIME = 0
@@ -22,7 +23,9 @@ class PDFViewer(QWidget):
         self.initUI()
         self.capturing = False
         self.selectedtopic = ""
-        self.pages = []
+        self.documents = {}
+        self.currentDocument = ""
+        pdfSelected = pyqtSignal(str)
         # self.ocr = PaddleOCR(use_angle_cls=True, lang='en')
 
     def initUI(self):
@@ -85,6 +88,7 @@ class PDFViewer(QWidget):
         # self.graphicsView.pixmapCropped.connect(self.handleCroppedPixmap)  # Connect the signal to the slot
 
         self.graphicsView.pixmapCropped.connect(self.handleCroppedPixmap)
+        #self.pdfSelected.connect()
         
         self.show()
 
@@ -126,14 +130,15 @@ class PDFViewer(QWidget):
             self.loadPDF(path)
 
     def loadPDF(self, path):
-        self.doc = fitz.open(path)
-        zoom = 1.0  # Adjust this factor to increase the rendering resolution
-        new_size_matrix = fitz.Matrix(zoom, zoom)
-        #load all pages at once
-        self.deepload(new_size_matrix)
-        pageno = 0
-        self.currentPage = pageno
-        self.showPage(self.currentPage)
+        print(path)
+        #extrct the file name 
+        pdffilename = path.split("/")[-1]
+        if not pdffilename in self.documents.keys():
+            pdf_doc = InputDocument(document_name=pdffilename, file_path=path)
+            self.documents[pdffilename] =pdf_doc
+            self.currentDocument = pdf_doc
+            current_pixmap = self.currentDocument.get_current_page_pixmap()
+            self.showPage(current_pixmap)
 
     def prevPage(self):
         if self.currentPage > 0:
@@ -158,10 +163,10 @@ class PDFViewer(QWidget):
                     self.pages.append(img)
             #print(len(self.pages))
 
-    def showPage(self, page_number):
-        if self.doc and len(self.pages) != 0:
-            img = self.pages[page_number-1]
+    def showPage(self, pix):
+        if self.currentDocument and len(self.currentDocument.pages) != 0:
             self.scene.clear()
+            img = QImage(pix.samples, pix.width, pix.height, pix.stride, QImage.Format.Format_RGB888)
             self.scene.addPixmap(QPixmap.fromImage(img))
             #self.btnScreenshot.setEnabled(True)
 

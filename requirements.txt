@@ -8,3 +8,4 @@ openai
 fpdf
 sentence_transformers
 python-dotenv
+llama-cpp-python

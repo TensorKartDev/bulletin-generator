@@ -24,7 +24,7 @@ class MainViewer(QWidget):
 
         self.setWindowTitle(os.environ["APP_TITLE"])
         self.setGeometry(100, 100, 1200, 600)
-        #self.pdf_viewer.
+        #self.file_explorer.pdfSelected.connect()
         #self.file_explorer.pdfSelected.connect()
         self.show()
         # print()

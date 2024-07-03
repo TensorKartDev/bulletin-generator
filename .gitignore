@@ -1,6 +1,6 @@
 __*
 .vscode
-topic_collections/
+topic_collections/*
 *.jpg
 *.png
 
@@ -9,3 +9,4 @@ topics.json
 .env
 chroma_data/*
 topics_*
+models
